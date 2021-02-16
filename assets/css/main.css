@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-weight: 500;
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+}
+.nav ul li {
+  padding: 10px 20px;
+  color: #9cafbf;
+  cursor: pointer;
+}
+
+body {
+  height: 100%;
+  background: #132d46;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrraper {
+  width: 100%;
+  height: 520px;
+  padding: 20px;
+  background-image: linear-gradient(to right, #132c44, #060f19);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  position: relative;
+}
+
+.portfolio {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.portfolio .image {
+  width: 100%;
+  position: relative;
+  background: #072b4a;
+  border-radius: 147px 223px 64px 147px;
+}
+.portfolio .image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 162px;
+  filter: grayscale(1);
+}
+.portfolio .content-section {
+  width: 100%;
+  position: relative;
+}
+.portfolio .content-section .content {
+  display: none;
+  opacity: 0;
+  margin-top: 3em;
+  -webkit-animation: display-none-transition 1s ease;
+  animation: display-none-transition 1s ease;
+}
+.portfolio .content-section span {
+  color: #9cafbf;
+  font-size: 50px;
+  font-weight: 900;
+  margin: 30px 0 0;
+  display: block;
+  font-family: sans-serif;
+}
+.portfolio .content-section p {
+  color: #9cafbf;
+}
+.portfolio .content-section .disc {
+  text-align: left;
+  line-height: 2;
+}
+.portfolio .content-section .linkGit {
+  color: #295884;
+}
+
+/*  sochialIcon style */
+.sochialIcon {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.sochialIcon i.fa {
+  font-size: 20px;
+  color: antiquewhite;
+  margin-left: 24px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.sochialIcon i.fa:hover {
+  transform: translateY(-6px);
+}
+
+/*  radio_tabs style */
+.radio_tabs {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  list-style: none;
+}
+.radio_tabs li {
+  margin-right: 10px;
+  color: #9cafbf;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.radio_tabs li:hover {
+  transform: translateY(-6px);
+}
+
+@keyframes display-none-transition {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes display-none-transition {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*----------------*/
+.portfolio .content-section .content.active {
+  display: block;
+  opacity: 1;
+}
+
+.progress {
+  width: 70%;
+  margin-bottom: 20px;
+  height: 1.3rem;
+}
+.progress .progress-bar {
+  text-align: left;
+  padding-left: 20px;
+  background: #295884 !important;
+}
+
+/*----------- demoWork style -----*/
+.demoWork {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.demoWork ._blockImg {
+  width: 82%;
+  height: 520px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #132c44, #060f19);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  padding: 20px;
+}
+.demoWork .flex {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+.demoWork .flex .banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.demoWork .flex .banner ._blocks {
+  position: relative;
+  display: block;
+  width: 5vw;
+  height: 5vw;
+  background: #295884;
+  animation: animate 2s ease-in-out forwards;
+}
+.demoWork .flex .banner .demoImg {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  background: #132d46;
+  padding: 10px;
+}
+.demoWork .flex .banner .demoImg img {
+  width: 100%;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateZ(2000px);
+  }
+  100% {
+    transform: translateZ(0px);
+  }
+}
+@media (max-width: 992px) {
+  body {
+    background: #ffffff;
+  }
+
+  .wrraper,
+.demoWork ._blockImg,
+.demoWork .flex .banner ._blocks {
+    background: #eae9e9;
+  }
+
+  .portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .portfolio .image {
+    background: transparent;
+  }
+
+  .portfolio .image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .wrraper {
+    height: 100vh;
+  }
+
+  .progress {
+    width: 100%;
+  }
+
+  .portfolio .content-section .disc {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .portfolio .content-section span {
+    font-size: 35px;
+    margin: 0px;
+  }
+
+  .portfolio .content-section .content {
+    margin-top: 0.5em;
+  }
+
+  .demoWork ._blockImg {
+    height: 100vh;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
